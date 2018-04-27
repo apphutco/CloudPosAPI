@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPosAPI", "CloudPosAPI\CloudPosAPI.csproj", "{69311F70-0BFF-42F0-9C9B-C622A39D130B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPosAPI.Dto", "CloudPosAPI.Dto\CloudPosAPI.Dto.csproj", "{E0969C0E-3EF4-4C12-A6CF-D62E57850A05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPosAPI.Data", "CloudPosAPI.Data\CloudPosAPI.Data.csproj", "{0477C413-E8E7-47DA-B262-6BE9424530E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPosAPI.Services", "CloudPosAPI.Services\CloudPosAPI.Services.csproj", "{1D2CF441-43D2-4B5B-ACC4-91E7FB876602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPosAPI.Util", "CloudPosAPI.Util\CloudPosAPI.Util.csproj", "{87103425-9247-4A32-8364-6B3C27BDE86A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{69311F70-0BFF-42F0-9C9B-C622A39D130B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69311F70-0BFF-42F0-9C9B-C622A39D130B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69311F70-0BFF-42F0-9C9B-C622A39D130B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0969C0E-3EF4-4C12-A6CF-D62E57850A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0969C0E-3EF4-4C12-A6CF-D62E57850A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0969C0E-3EF4-4C12-A6CF-D62E57850A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0969C0E-3EF4-4C12-A6CF-D62E57850A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0477C413-E8E7-47DA-B262-6BE9424530E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0477C413-E8E7-47DA-B262-6BE9424530E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0477C413-E8E7-47DA-B262-6BE9424530E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0477C413-E8E7-47DA-B262-6BE9424530E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D2CF441-43D2-4B5B-ACC4-91E7FB876602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D2CF441-43D2-4B5B-ACC4-91E7FB876602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D2CF441-43D2-4B5B-ACC4-91E7FB876602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D2CF441-43D2-4B5B-ACC4-91E7FB876602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87103425-9247-4A32-8364-6B3C27BDE86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87103425-9247-4A32-8364-6B3C27BDE86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87103425-9247-4A32-8364-6B3C27BDE86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87103425-9247-4A32-8364-6B3C27BDE86A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
