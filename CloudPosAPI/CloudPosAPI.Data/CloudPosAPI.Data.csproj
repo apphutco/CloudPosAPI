@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="CloudPosContext.cs" />
     <Compile Include="Entities\Institution.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
