@@ -7,7 +7,7 @@ namespace CloudPosAPI.Data
     {
         public CloudPosContext() : base("name=CloudPosDBConnectionString")
         {
-
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<CloudPosContext, Migrations.Configuration>());
         }
 
 
