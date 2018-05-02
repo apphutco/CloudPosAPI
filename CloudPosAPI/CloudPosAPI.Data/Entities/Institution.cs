@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -24,5 +25,14 @@ namespace CloudPosAPI.Data.Entities
         public string TelephoneNo { get; set; }
         public byte[] Logo { get; set; }
         public bool IsActive { get; set; }
+
+        [ForeignKey("CurrencyId")]
+        public Currency Currency { get; set; }
+
+        public ICollection<User> Users { get; set; }
+        public ICollection<Role> Roles { get; set; }
+        public ICollection<UserLogin> UserLogins { get; set; }
+
+
     }
 }
