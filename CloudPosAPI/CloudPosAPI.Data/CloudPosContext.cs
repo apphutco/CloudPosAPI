@@ -13,8 +13,6 @@ namespace CloudPosAPI.Data
 
         public DbSet<Currency> Currencies { get; set; }
         public DbSet<Institution> Institutions { get; set; }
-
-
         public DbSet<Endpoint> Endpoints { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }

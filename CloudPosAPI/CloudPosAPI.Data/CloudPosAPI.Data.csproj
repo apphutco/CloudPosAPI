@@ -51,6 +51,7 @@
     <Compile Include="Entities\Currency.cs" />
     <Compile Include="Entities\Endpoint.cs" />
     <Compile Include="Entities\Institution.cs" />
+    <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserLogin.cs" />
     <Compile Include="Migrations\Configuration.cs" />
