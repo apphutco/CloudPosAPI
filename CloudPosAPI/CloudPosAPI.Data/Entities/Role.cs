@@ -17,7 +17,7 @@ namespace CloudPosAPI.Data.Entities
         public DateTime CreatedDate { get; set; }
         public Guid CreatedBy { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        public virtual ICollection<User> Users { get; set; }
 
         [ForeignKey("InstitutionId")]
         public Institution Institution { get; set; }

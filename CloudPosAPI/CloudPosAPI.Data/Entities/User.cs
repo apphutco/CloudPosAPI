@@ -24,7 +24,7 @@ namespace CloudPosAPI.Data.Entities
         public DateTime CreatedDate { get; set; }
         public Guid CreatedBy { get; set; }
 
-        public ICollection<UserLogin> UserLogins { get; set; }
+        public virtual ICollection<UserLogin> UserLogins { get; set; }
 
         [ForeignKey("RoleId")]
         public Role Role { get; set; }

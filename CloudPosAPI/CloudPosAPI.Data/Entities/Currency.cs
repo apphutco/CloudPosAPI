@@ -10,10 +10,11 @@ namespace CloudPosAPI.Data.Entities
     {
         [Key]
         public Guid Id { get; set; }
+        [Required]
         public string Code { get; set; }
         public string Name { get; set; }
         public bool IsActive { get; set; }
 
-        public ICollection<Institution> Institutions { get; set; }
+        public virtual ICollection<Institution> Institutions { get; set; }
     }
 }
