@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CloudPosAPI.Data.Entities
 {
+    [Table("User")]
     public class User
     {
+        [Key]
         public Guid Id { get; set; }
         public Guid RoleId { get; set; }
         public Guid InstitutionId { get; set; }
@@ -22,5 +23,13 @@ namespace CloudPosAPI.Data.Entities
         public string PinCode { get; set; }
         public DateTime CreatedDate { get; set; }
         public Guid CreatedBy { get; set; }
+
+        public ICollection<UserLogin> UserLogins { get; set; }
+
+        [ForeignKey("RoleId")]
+        public Role Role { get; set; }
+
+        [ForeignKey("InstitutionId")]
+        public Institution Institution { get; set; }
     }
 }
