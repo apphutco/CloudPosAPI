@@ -12,5 +12,5 @@ namespace CloudPosAPI.Data.Entities
         public Guid ScreenId { get; set; }
         public string Name { get; set; }
         public bool IsActive { get; set; }
-}
+    }
 }
