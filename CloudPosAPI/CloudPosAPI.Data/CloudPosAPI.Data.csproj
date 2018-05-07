@@ -54,11 +54,16 @@
     <Compile Include="Entities\Endpoint.cs" />
     <Compile Include="Entities\HttpLog.cs" />
     <Compile Include="Entities\Institution.cs" />
+    <Compile Include="Entities\InstitutionPayment.cs" />
+    <Compile Include="Entities\InstitutionSubsctiption.cs" />
+    <Compile Include="Entities\PaymentMethod.cs" />
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\Screen.cs" />
     <Compile Include="Entities\ScreenAccess.cs" />
     <Compile Include="Entities\ScreenEndpoint.cs" />
     <Compile Include="Entities\ScreenEndpointAccess.cs" />
+    <Compile Include="Entities\SubscriptionScheme.cs" />
+    <Compile Include="Entities\SubscriptionType.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserLogin.cs" />
     <Compile Include="Migrations\Configuration.cs" />

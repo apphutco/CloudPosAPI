@@ -15,11 +15,13 @@ namespace CloudPosAPI.Data.Entities
         public string Name { get; set; }
         public bool IsActive  { get; set; }
         public DateTime CreatedDate { get; set; }
-        public Guid CreatedBy { get; set; }
-
-        public virtual ICollection<User> Users { get; set; }
+        public Guid CreatedBy { get; set; }    
 
         [ForeignKey("InstitutionId")]
         public Institution Institution { get; set; }
+
+        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<ScreenAccess> ScreenAccesses { get; set; }
+        public virtual ICollection<ScreenEndpointAccess> ScreenEndpointAccesses { get; set; }
     }
 }

@@ -32,7 +32,7 @@ namespace CloudPosAPI.Data.Entities
         public virtual ICollection<User> Users { get; set; }
         public virtual ICollection<Role> Roles { get; set; }
         public virtual ICollection<UserLogin> UserLogins { get; set; }
-
-
+        public virtual ICollection<HttpLog> HttpLogs { get; set; }
+        public virtual ICollection<InstitutionSubsctiption> InstitutionSubsctiptions { get; set; }
     }
 }

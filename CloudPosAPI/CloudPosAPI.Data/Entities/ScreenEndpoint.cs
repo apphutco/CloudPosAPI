@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -17,5 +18,7 @@ namespace CloudPosAPI.Data.Entities
 
         [ForeignKey("EndpointId")]
         public Endpoint Endpoint { get; set; }
+
+        public virtual ICollection<ScreenEndpointAccess> ScreenEndpointAccesses { get; set; }
     }
 }

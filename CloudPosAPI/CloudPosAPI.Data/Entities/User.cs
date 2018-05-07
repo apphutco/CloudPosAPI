@@ -22,14 +22,19 @@ namespace CloudPosAPI.Data.Entities
         public string Password { get; set; }
         public string PinCode { get; set; }
         public DateTime CreatedDate { get; set; }
-        public Guid CreatedBy { get; set; }
-
-        public virtual ICollection<UserLogin> UserLogins { get; set; }
+        public Guid CreatedBy { get; set; }       
 
         [ForeignKey("RoleId")]
         public Role Role { get; set; }
 
         [ForeignKey("InstitutionId")]
         public Institution Institution { get; set; }
+
+        public virtual ICollection<UserLogin> UserLogins { get; set; }
+        public virtual ICollection<ScreenAccess> ScreenAccesses { get; set; }
+        public virtual ICollection<ScreenEndpointAccess> ScreenEndpointAccesses { get; set; }
+        public virtual ICollection<HttpLog> HttpLogs { get; set; }
+        public virtual ICollection<InstitutionSubsctiption> InstitutionSubsctiptions { get; set; }
+        public virtual ICollection<InstitutionPayment> InstitutionPayments { get; set; }
     }
 }

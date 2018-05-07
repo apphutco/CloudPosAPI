@@ -15,5 +15,8 @@ namespace CloudPosAPI.Data.Entities
         public string Type { get; set; }
 
         public virtual ICollection<ScreenEndpoint> ScreenEndpoints { get; set; }
+        public virtual ICollection<ScreenAccess> ScreenAccesses { get; set; }
+        public virtual ICollection<ScreenEndpointAccess> ScreenEndpointAccesses { get; set; }
+        public virtual ICollection<Endpoint> Endpoints { get; set; }
     }
 }
