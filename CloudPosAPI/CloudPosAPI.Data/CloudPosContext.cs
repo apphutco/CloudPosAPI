@@ -37,6 +37,12 @@ namespace CloudPosAPI.Data
             modelBuilder.Entity<Role>().HasMany(t => t.Users).WithRequired(a => a.Role).WillCascadeOnDelete(false);
             modelBuilder.Entity<Currency>().HasMany(t => t.Institutions).WithRequired(a => a.Currency).WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<User>().HasMany(t => t.InstitutionSubsctiptions).WithRequired(a => a.User).WillCascadeOnDelete(false);
+            modelBuilder.Entity<Screen>().HasMany(t => t.ScreenEndpoints).WithRequired(a => a.Screen).WillCascadeOnDelete(false);
+            modelBuilder.Entity<ScreenEndpoint>().HasMany(t => t.ScreenEndpointAccesses).WithRequired(a => a.ScreenEndpoint).WillCascadeOnDelete(false);
+            modelBuilder.Entity<ScreenEndpoint>().HasMany(t => t.ScreenEndpointAccesses).WithRequired(a => a.ScreenEndpoint).WillCascadeOnDelete(false);
+
+
         }
 
     }
